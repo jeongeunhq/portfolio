@@ -1,0 +1,79 @@
+/* 기본 스타일 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 210, 234); 
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: flex-start; 
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #e6679e;
+}
+
+/* 반응형 스타일 */
+
+/* 태블릿 화면 (최대 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 10px;
+    flex-wrap: wrap; /* 헤더가 줄바꿈될 수 있도록 */
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .nav a {
+    margin: 0 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 모바일 화면 (최대 480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column; /* 세로 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .nav {
+    flex-direction: column; /* 메뉴를 세로로 정렬 */
+    align-items: flex-start;
+    width: 100%; /* 너비를 헤더에 맞춤 */
+  }
+
+  .nav a {
+    margin: 5px 0;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,74 @@
+.skills-section {
+    padding: 200px;
+    text-align: center;
+  }
+  
+  .skills-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(252, 187, 222); /* 배경 색 */
+    height: auto; /* 높이를 자동으로 설정하여 내부 콘텐츠에 맞게 크기 조정 */
+    gap: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* 화면 크기에 맞게 전체 너비 확장 */
+    box-sizing: border-box; /* padding을 포함한 크기 계산 */
+  }
+  
+  .skills-category {
+    flex: 1;
+    min-width: 200px; 
+    max-width: 300px; 
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+    padding: 10px;
+  }
+  
+  .category-icon {
+    font-size: 2rem;
+    text-align: left;
+  }
+  
+  .category-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+  }
+  
+  .skill-badge {
+    background-color: #f0f4ff;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .skill-badge:hover {
+    transform: scale(1.1);
+    background-color: #d9eaff;
+    cursor: pointer;
+  }
+  
