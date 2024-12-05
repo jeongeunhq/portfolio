@@ -23,7 +23,7 @@ function Skills() {
           <h3 className="category-title">Frontend</h3>
           <div className="skills-list">
             <span className="skill-badge">React</span>
-            <span className="skill-badge">Dart</span>
+            <span className="skill-badge">Flutter</span>
             <span className="skill-badge">HTML5</span>
             <span className="skill-badge">CSS3</span>
             <span className="skill-badge">Figma</span>
@@ -36,6 +36,8 @@ function Skills() {
           <div className="category-icon">🖥️</div>
           <h3 className="category-title">Backend</h3>
           <div className="skills-list">
+          <span className="skill-badge">PHP</span>
+          <span className="skill-badge">Node.js</span>
             <span className="skill-badge">PostgreSQL</span>
             <span className="skill-badge">Firebase</span>
             <span className="skill-badge">MySQL</span>

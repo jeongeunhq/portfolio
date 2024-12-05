@@ -48,11 +48,11 @@ function Project() {
         ["반응형 웹 개발", "React를 활용한 컴포넌트 설계", "CSS 애니메이션 기능"]
     ];
     const projectTech = [
-        ["Dart","Flutter","Figma"],
-        ["Dart","Flutter","Figma"],
+        ["Flutter","Figma"],
+        ["Flutter","Figma"],
         ["React","React-Query", "React-Hook","React-Library","Css","Figma"],
-        ["Html","Css","Jquery"],
-        ["Apache","Node js","MySql"],
+        ["Html","Css","JavaScript","Node.js"],
+        ["Apache","Node js","MySql","PHP","Html","Css"],
         ["React","Css","Figma"],
     ]
     const sourceCode = [

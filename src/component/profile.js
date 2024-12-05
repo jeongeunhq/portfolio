@@ -1,34 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../css/profile.css';
 import pic1 from '../img/profile.jpg';
 
 function Profile() {
-  const [typedText, setTypedText] = useState('');
-  const fullText = "주니어 Frontend 개발자 정은하입니다!";  // 정확한 텍스트 설정
-
-  useEffect(() => {
-    let index = 0;
-    
-    const typeText = () => {
-      if (index < fullText.length) {
-        setTypedText((prevText) => prevText + fullText.charAt(index));
-        index++;
-        setTimeout(typeText, 100);  // 100ms 간격으로 재귀 호출
-      }
-    };
-
-    typeText();  // 초기 호출
-
-    return () => {
-      // 컴포넌트 언마운트 시 타이핑 애니메이션 정리
-      index = fullText.length;
-    };
-  }, []);
 
   return (
     <section id="profile" className="intro-section">
       <h2>안녕하세요 :)</h2>
-      <h3 className="typing-animation">{typedText}</h3>  {/* 타이핑된 텍스트 출력 */}
+      <h3>주니어 프론트엔드 개발자 정은하입니다!</h3> 
       <p>
         백엔드와 인공지능 등 다양한 분야에서 창출한 결과물을 사용자에게 시각적으로 전달하는 과정에서 
         깊은 매력을 느껴, 이를 구현할 수 있는 프론트엔드 개발자를 꿈꾸게 되었습니다.
